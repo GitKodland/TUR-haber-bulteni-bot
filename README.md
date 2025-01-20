@@ -1,23 +1,23 @@
-# Newsletter Bot
+# Haber Bülteni Botu
 
-### Commands:
+### Komutlar:
 
-- **!news**: Retrieves and displays news from a specified RSS feed.
-- **!subscribe**: Allows a user to subscribe to notifications by keyword.
-- **!unsubscribe**: Allows a user to unsubscribe from notifications by keyword.
-- **!notifications**: Displays the user's current subscriptions.
-- **!latest**: Shows the latest news for all of the user's subscriptions.
-- **!info**: Displays information about the bot.
+- **!news**: Belirtilen bir RSS kaynağından haberleri alır ve görüntüler.
+- **!subscribe**: Bir kullanıcıya anahtar kelime ile bildirimlere abone olma imkanı sunar.
+- **!unsubscribe**: Bir kullanıcıya anahtar kelime ile bildirim aboneliğinden çıkma imkanı sunar.
+- **!notifications**: Kullanıcının mevcut aboneliklerini gösterir.
+- **!latest**: Kullanıcının tüm abonelikleri için en son haberleri görüntüler
+- **!info**: Bot hakkında bilgi verir.
 
-### Background Task:
+### Arka Plan Görevi:
 
-**update_news**: Updates news every 10 minutes and caches them if the news headline contains a keyword from the subscriptions.
+**update_news**:  Her 10 dakikada bir haberleri günceller ve başlık, aboneliklerden bir anahtar kelime içeriyorsa önbelleğe kaydeder.
 
-### Data Structure:
+### Veri Yapısı:
 
-**subscriptions**: A dictionary for storing user subscriptions.  
-**news_cache**: A cache for storing news related to keywords.
+**subscriptions**: Kullanıcı aboneliklerini depolamak için bir sözlük.  
+**news_cache**: Anahtar kelimelerle ilgili haberleri depolamak için bir önbellek.
 
-### RSS Parser:
+### RSS Ayrıştırıcı:
 
-Uses the **feedparser** library to fetch news from RSS feeds.
+Haberleri RSS kaynaklarından almak için **feedparser** kütüphanesini kullanır.
