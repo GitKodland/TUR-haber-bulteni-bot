@@ -15,7 +15,7 @@ subscriptions = {}
 news_cache = {}
 
 # Önceden tanımlı RSS kaynak URL'si
-rss_feed_url = "https://www.cbc.ca/webfeed/rss/rss-world"
+rss_feed_url = "https://www.bbc.co.uk/turkce/index.xml"
 
 # RSS kaynağından haber almak için fonksiyon
 def get_news(feed_url):
